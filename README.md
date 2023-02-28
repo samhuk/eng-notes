@@ -4,6 +4,11 @@ A bit about me and my thoughts and views on software and engineering:
 * **Make something that earns people money** or something they must have for compliance.
 * **Have care and craftsmanship.**
 * I'm not from a CS background, so my thinking is often more practical, less academic.
+* **Correctly prioritize features**
+  * Features for most projects follow a [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution).
+  * *"~80% of features take ~20% of the time"*
+  * Accordingly, the last 20% of features takes the remaining 80% of the time.
+  * Focus on the 80%, with the 20% in mind.
 * **My process**:
   1. Get requirement(s)/problem(s).
   2. Make sure they are the correct requirement(s)/problem(s) to solve.
