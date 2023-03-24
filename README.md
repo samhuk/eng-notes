@@ -11,13 +11,13 @@ A bit about me and my thoughts and views on software and engineering:
   * Focus on the 80%, with the 20% in mind.
 * **My process**:
   1. Get requirement(s)/problem(s).
-  2. Make sure they are the correct requirement(s)/problem(s) to solve.
-  3. Has somebody already created a solution or similar? (Don't reinvent the wheel)
-  4. If so, use as base. Adapt and move onto PoC/validation.
-  5. Else, figure out solution. Break the problem down. Divide and conquer. Need help?
-  6. Iterate and liase stackholders, ensure on right track. Need initial buy-in?
+  2. Make sure they are the correct ones to solve.
+  3. Has somebody already created a solution or similar?
+  4. If so, use as base. Adapt and move onto PoC/validation/iteration.
+  5. Else, figure out solution. Research. Break the problem down. Need help?
+  6. Iterate and liase with stackholders, ensure on right track. Need initial buy-in?
   8. Iterate through stages: alpha -> beta, 0 -> 1 -> 2, eventually to GA.
-  9. Maintain, extend, semver, care, profit!
+  9. Market, maintain, extend, semver, care, profit!
 * **Don't be religious**.
   * Nothing is binary.
   * Optimal decisions almost always sit between 0 and 1, almost never at 0 and 1.
