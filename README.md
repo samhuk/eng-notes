@@ -50,22 +50,23 @@ A bit about me and my thoughts and views on software and engineering:
 * **TDD**: Theoretically great in pre-defined toy scenarios, practically not that important. Create tests, but it's not necessary to religiously and rigorously create all tests before all of your functional code.
 * **Thoughts on SOLID**:
   * General observations:
-    * Agree with the "spirit" of it.
-    * It's based on somewhat imperative OOP concepts from 90's/00's era of CS academia.
+    * Agree with it's "spirit".
+    * Originates from notable figures from the 90's/00's era of CS academia. Quite a lot has changed!
+    * Based on somewhat imperative OOP concepts.
     * Involves toy scenarios like "Animal, Cat, Dog", "Book, Invoice", etc.
     * Generally too absolutist. Too "0 or 1".
-    * Therefore requires naunced, practical interpretation and application for real-world relevance.
+    * In conclusion, therefore, it requires a naunced, practical interpretation and application for real-world relevance.
   * SR principle
-    * The phrase quoted often here is "There should never be more than one reason for a class to change."
-    * Originates from https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf
-    * In my experience, it's almost never optimal to separate your modules so much such that they do exactly *one* thing and only ever have <=1 reasons to change.
-    * I personally believe in a more forgiving version - RM principle - Responsibility Minimization principle
-      * For example: *"The purpose of your modules should be as close to one as possible and elevator-pitchable"*
+    * The phrase quoted often here: "There should never be more than one reason for a class to change."
+    * [Origin](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf)
+    * It's almost never optimal to separate your modules so much such that they do exactly *one* thing and only ever have <=1 reasons to change.
+    * I believe in a more realistic version: Responsibility Minimization principle
+    * E.g.: *"The purpose of your modules should be as close to one as possible and elevator-pitchable"*
   * OC principle
     * "**O**pen to extension, **C**losed to modification."
-    * Relates to being able to use a class from a library and be able to extend from it without modifying the library
-    * It's definition is rather verbose and meandering. Comes from 1988.
-    * The closest principle of mine I have to this is "LDD" (see above *LDD* section).
+    * Means to be able to use a class from a library and be able to extend from it without modifying the library itself.
+    * It's definition is rather verbose. Comes from 1988.
+    * I prefer a more grounded, general version: "Library Driven Development" (see above *LDD* section).
   * LS principle
     * "**L**iskov-**S**ubstitution principle"
     * It's formal definition is highly academic and rather verbose, meandering, and antiquated. Comes from 1994.
