@@ -30,8 +30,8 @@ A bit about me and my thoughts and views on software and engineering:
   * The involved ETL processes.
   * Etc.
 * **Prefer composition** (except in game dev).
-  * Inheritence often leads to complicated code. *Sometimes* is the right path, but less likely.
-  * Composition promotes divide & conquer problem solving and composible architecture.
+  * Inheritence often leads to complicated code. *Sometimes* is right path, but unlikely.
+  * Composition promotes divide & conquer problem solving and composible architectures.
 * **PEP20** (Zen of Python).
   * Numbered list: https://python.land/the-zen-of-python.
   * Some of my highlights:
