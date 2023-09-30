@@ -1,90 +1,54 @@
 A bit about me and my thoughts and views on software and engineering:
 
-* **Thoughts and views can change and be changed.**
-* **Make something that earns people money** or something they must have for compliance.
-* **Have care and craftsmanship.**
-* I'm not from a CS background, so my thinking is often more practical, less academic.
-* **Correctly prioritize features**
-  * Features for most projects follow a [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution).
+* Thoughts and views can change and be changed.
+* Make something that earns people money, saves them time, simplifies a workflow, or something that is required for compliance.
+* Have care and craftsmanship.
+* Correctly prioritize features
+  * How long features take to complete often follow a [Pareto distribution](https://en.wikipedia.org/wiki/Pareto_distribution).
   * *"~80% of features take ~20% of the time"*
-  * Accordingly, the last 20% of features takes the remaining 80% of the time.
-  * Focus on the 80%, with the 20% in mind.
-* **My process**:
+  * Focus on the 80%, with the 20% in mind for later.
+* My process:
   1. Get requirement(s)/problem(s).
-  2. Make sure they are the correct ones to solve.
+  2. Make sure they are the correct ones to solve. GOTO 1 until correct.
   3. Has somebody already created a solution or similar?
-  4. If so, use as base. Adapt and move onto PoC/validation/iteration.
+  4. If so, use as base. GOTO 6.
   5. Else, figure out solution. Research. Break the problem down. Need help?
-  6. Iterate and liase with stackholders, ensure on right track. Need initial buy-in?
-  8. Iterate through stages: alpha -> beta, 0 -> 1 -> 2, eventually to GA.
+  6. Iterate whilst liasing with stackholders. Ensure on right track. Need initial buy-in?
+  8. Iterate through releases. alpha -> beta, 0 -> 1 -> 2. Plan path to GA.
   9. Market, maintain, extend, semver, care, profit!
-* **Don't be religious**.
-  * Nothing is binary.
-  * Optimal decisions almost always sit between 0 and 1, almost never at 0 and 1.
-  * For example: Optimal amount of tech debt is never at 0% or 100%. Tech debt is just like fiat debt. None or lots *can* be a hinderance.
+* Don't be religious.
+  * Optimal decisions almost always sit between 0.2 and 0.8 of a decision space, almost never at the extremes.
+  * Example: Optimal amount of tech debt is never at 0% or 100%. Tech debt is like fiat debt. None or lots can be bad.
 * Many problems are made much easier by focusing on:
-  * Solving a simpler/toy problem first
-  * Required behaviors
-  * Required data structures
-  * Data life-times
-  * The involved ETL processes.
+  * A simpler/toy problem first
+  * The required behaviors
+  * The required data structures and APIs/interfaces
+  * The data life-times
+  * The involved data ETL processes.
   * Etc.
-* **Prefer composition** (except in game dev).
+* Prefer composition (excluding game dev).
   * Inheritence often leads to complicated code. *Sometimes* is right path, but unlikely.
   * Composition promotes divide & conquer problem solving and composible architectures.
-* **PEP20** (Zen of Python).
+* PEP20 (Zen of Python).
   * Numbered list: https://python.land/the-zen-of-python.
-  * Some of my highlights:
-    * 2 - Because implicit code is not expressive to anyone but the creator.
+  * My favourites:
+    * 2 - Because implicit code is expressive to no-one but the creator.
     * 5 - Because flat lists of operations are more readable and composable versus deep stacks and promote problem solving by divide and conquer.
     * 12 - Because decisions without data are guesses
     * 13 - Because Go did this and it went well
-    * 17 - Because if you haven't got an elevator pitch for something you are doing in software, you don't understand it.
-* **KISS principle** (but sometimes "big" problems need "big" solutions).
-  * Don't overcomplicate the problem or solution.
-* **SR principle**
-* **"LDD"**
+    * 17 - Because if you haven't got an elevator pitch for something you are doing, you probably don't understand it.
+* Follow the KISS principle (but sometimes "big" problems need "big" solutions).
+* Follow the SR principle.
+* Follow *"LDD"*
   * Library-Driven Development.
-  * *"Imagine the code you are writing, whatever it is for, is an NPM/Nuget package."*.
+  * *"Imagine the code you are writing, whatever it is for, is a 'package'."*.
   * This mindset promotes creating reusable code with room for reinterpretation.
-* **TDD**: Theoretically great in pre-defined toy scenarios, practically not that important. Create tests, but it's not necessary to religiously and rigorously create all tests before all of your functional code.
-* **Thoughts on SOLID**:
-  * General observations:
-    * Agree with it's "spirit".
-    * Originates from notable figures from the 90's/00's era of CS academia. Quite a lot has changed!
-    * Based on somewhat imperative OOP concepts.
-    * Involves toy scenarios like "Animal, Cat, Dog", "Book, Invoice", etc.
-    * Generally too absolutist. Too "0 or 1".
-    * In conclusion, therefore, it requires a naunced, practical interpretation and application for real-world relevance.
-  * SR principle
-    * The phrase quoted often here: "There should never be more than one reason for a class to change."
-    * [Origin](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf)
-    * It's almost never optimal to separate your modules so much such that they do exactly *one* thing and only ever have <=1 reasons to change.
-    * I believe in a more realistic version: Responsibility Minimization principle
-    * E.g.: *"The purpose of your modules should be as close to one as possible and elevator-pitchable"*
-  * OC principle
-    * "**O**pen to extension, **C**losed to modification."
-    * Means to be able to use a class from a library and be able to extend from it without modifying the library itself.
-    * It's definition is rather verbose. Comes from 1988.
-    * I prefer a more grounded, general version: "Library Driven Development" (see above *LDD* section).
-  * LS principle
-    * "**L**iskov-**S**ubstitution principle"
-    * It's formal definition is highly academic and rather verbose, meandering, and antiquated. Comes from 1994.
-    * Agree with sentiment, but prefer a practical phrasing. For example: *"Don't write hidden logic/magic that differentiates your concretions to referers."*
-  * IS principle
-    * Sounds nice in CS academic context, impossible in practice.
-    * It's never possible in any decently-sized repository of code to tailor every module/service/thing for every other module/service/thing via interfaces that take subsets of properties. End up with too many interfaces => cognitive complexity.
-    * I prefer a practical interpretation: *"Avoid giving things access to unnecessary information"*.
-  * DI principle
-    * Strongly agree.
-    * Break down a problem and solve it with layered architectures.
-    * Build your services pyramid.
-    * *"Create modules that depend on libraries that depend on modules that depend on libraries that depend on...etc."*
-* Why tech can fail:
+* Be cautious of TDD
+  * Theoretically great in pre-defined toy scenarios, but practically not that useful.
+  * Create tests, but don't religiously create all tests before all of your functional code.
+* Be cautious of SOLID
+  * Needs to be reframed and moderated by business and common sense in order to be useful.
+* Why engineering can sometimes fail:
   * Non-technical leaders
-    * More likely to lack quality gauge
-    * More likely for decisions to be deferred, leading to "death by commitee".
-    * Examples: Boeing, NASA (Challenger), etc.
   * Acceptance of deviance
-    * Refered to in many ways: *"Slippery slope"*, *"Death by a thousand cuts"*, etc.
-    * Sometimes practicality wins here
+  * Private Equity financing
