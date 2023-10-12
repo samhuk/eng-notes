@@ -8,22 +8,23 @@ A bit about me and my thoughts and views on software and engineering:
   * *"~80% of features take ~20% of the time"*
   * Focus on the 80%, with the 20% in mind for later.
 * My process:
-  1. Get requirement(s)/problem(s).
-  2. Make sure they are the correct ones to solve. GOTO 1 until correct.
-  3. Has somebody already created a solution or similar?
-  4. If so, use as base. GOTO 6.
-  5. Else, figure out solution. Research. Break the problem down. Need help?
-  6. Iterate whilst liasing with stackholders. Ensure on right track. Need initial buy-in?
-  8. Iterate through releases. alpha -> beta, 0 -> 1 -> 2. Plan path to GA.
-  9. Market, maintain, extend, semver, care, profit!
+  | **i** | **task**                                                                           |
+  |----|---------------------------------------------------------------------------------------|
+  | 0  | Get requirement(s)/problem(s).                                                        |
+  | 1  | Make sure they are the correct ones to solve. GOTO 0 until correct.                   |
+  | 2  | Has somebody already created a solution or similar? If so, GOTO 4                     |
+  | 3  | Figure out solution. Research. Break the problem down. What are the behaviors? Need help? |
+  | 4  | Iterate whilst liasing with stakeholders. Ensure on right track. Need initial buy-in? |
+  | 5  | Iterate through releases. alpha -> beta, 0 -> 1 -> 2. Plan path to GA.                |
+  | 6  | Market, maintain, extend, semver, care, profit!                                       |
 * Don't be religious.
   * Optimal decisions almost always sit between 0.2 and 0.8 of a decision space, almost never at the extremes.
   * Example: Optimal amount of tech debt is never at 0% or 100%. Tech debt is like fiat debt. None or lots can be bad.
+* 1000 LoC that clearly expresses intent is better than 100 equiavelent LoC that expresses nothing. See ZoP PEP2.
 * Many problems are made much easier by focusing on:
   * A simpler/toy problem first
   * The required behaviors
   * The required data structures and APIs/interfaces
-  * The data life-times
   * The involved data ETL processes.
   * Etc.
 * Prefer composition (excluding game dev).
