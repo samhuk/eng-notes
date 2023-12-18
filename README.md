@@ -1,6 +1,8 @@
-A bit about me and my thoughts and views on software and engineering:
+### Summary
 
-This is a live document. Thoughts and views can change and be changed.
+A bit about me and my thoughts and views on software and engineering.
+
+This is a live document; thoughts and views can change and be changed.
 
 ### Mantra
 
