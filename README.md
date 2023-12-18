@@ -41,7 +41,7 @@ This is a live document; thoughts and views can change and be changed.
   * *"Imagine the code you are writing, whatever it is for, is a 'package'."*.
   * This mindset promotes creating reusable code with room for reinterpretation.
 
-### Takes on Some Well-known Principles
+### Views on Some Well-known Principles
 
 * Prefer composition (excluding game dev).
   * Inheritence often leads to complicated code. *Sometimes* is right path, but unlikely.
