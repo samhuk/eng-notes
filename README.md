@@ -50,7 +50,7 @@ This is a live document; thoughts and views can change and be changed.
 * Follow the SR principle.
 * Follow PEP20 (Zen of Python, https://python.land/the-zen-of-python).
   * My highlights:
-    * 2 - Because implicit code is expressive to no-one but the creator.
+    * 2 - Because implicit code is insidious.
     * 5 - Because flat lists of operations are more readable and composable versus deep stacks and promote problem solving by divide and conquer.
     * 12 - Because decisions without data are guesses
     * 13 - Because Go did this and it went well
