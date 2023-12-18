@@ -6,7 +6,7 @@ This is a live document; thoughts and views can change and be changed.
 
 ### Mantra
 
-**Make to delight; there is no other purpose. Make people happy with your software, your package, your platform, your thing. Have care and craftsmanship in your work.**
+**Make to delight, care about your work, make the world a better place, and do no evil.**
 
 ### General Takes
 
